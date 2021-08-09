@@ -1,5 +1,7 @@
 package com.example.unit3eval1;
 
-public interface ClickListener {
+import android.os.Bundle;
 
+public interface ClickListener {
+void launchdetailfrag(Bundle bundle);
 }
