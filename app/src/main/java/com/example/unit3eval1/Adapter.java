@@ -12,9 +12,9 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<ViewHolder> {
-    private List<Model> modelList;
+    private List<ResponseModel> modelList;
 
-    public Adapter(List<Model> modelList) {
+    public Adapter(List<ResponseModel> modelList) {
         this.modelList = modelList;
     }
 
@@ -29,8 +29,8 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull ViewHolder holder, int position) {
-        Model model=modelList.get(position);
-        holder.setData(model);
+       ResponseModel responseModel=modelList.get(position);
+        holder.setData(responseModel);
 
     }
 
