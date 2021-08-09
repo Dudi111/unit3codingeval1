@@ -24,7 +24,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         tvsubview=itemView.findViewById(R.id.tvsubtitle);
     }
     public void setData(ResponseModel model){
-        ivimage.setImageResource(model.getImage());
+        ivimage.setImageResource(Integer.parseInt(model.getImage()));
         tvview.setText(model.getTitle());
         tvsubview.setText(model.getSubTitle());
     }
